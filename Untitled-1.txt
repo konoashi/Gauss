@@ -1,0 +1,13 @@
+<div id="enter_player_box_wrapper"><a>
+            </a><div id="enter_player_box"><a>
+                <p>Best Calculator for SkyBlock</p>
+                </a><a href="index.html" class="top-profile2"><input id="goto_target_username2" type="button" value="Skyblock"></a>
+                <a href="indexnotafilated.html" class="top-profile3"><input id="goto_target_username3" type="button" value="Not Affilated"></a>
+            </div>
+        
+        
+<div id="enter_player_box"><a>
+                <p>Best Calculator for SkyBlock</p>
+                </a><a href="index.html" class="top-profile2"><input id="goto_target_username2" type="button" value="Skyblock"></a>
+                <a href="indexnotafilated.html" class="top-profile3"><input id="goto_target_username3" type="button" value="Not Affilated"></a>
+            </div>

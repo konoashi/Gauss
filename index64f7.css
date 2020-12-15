@@ -1,0 +1,323 @@
+*{
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+#global {
+    min-width: 850px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+html{
+    background-color: black;
+    background: url(https://miro.medium.com/max/4000/1*qwU04ooAzxntMp-jD_DvnQ.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    scrollbar-color: #001763 rgb(45,45,45)
+}
+
+
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: rgb(45,45,45);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #130166;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgb(45,45,45);
+}
+
+::-webkit-scrollbar-corner {
+    background: rgb(40,40,40);
+}
+
+
+
+.grecaptcha-badge{
+    visibility: hidden;
+}
+
+.stat-name, .stat-value, .skill-name, .skill-progress-text, .grey-text, .kill-stat{
+    user-select: text !important;
+}
+
+.stat-namel{
+    user-select: text !important;
+}
+
+
+html.no-webp{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/ba/La_bataille_d%27Austerlitz._2_decembre_1805_%28Fran%C3%A7ois_G%C3%A9rard%29.jpg);
+}
+
+a.no-underline{
+    text-decoration: none;
+}
+
+.tippy-tooltip{
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 0;
+    user-select: text;
+}
+
+.tippy-content .stat-name{
+    color: rgba(255,255,255,0.85);
+    text-transform: none;
+}
+
+.stat-namel{
+    color: rgba(255,255,255,0.85);
+    text-transform: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.tippy-content{
+    border-radius: 5px;
+    background-color: rgb(30,30,30);
+}
+
+.tippy-tooltip[data-placement^="top"] > .tippy-arrow{
+    border-top-color: rgb(166, 20, 93);
+}
+
+.tippy-tooltip[data-placement^="bottom"] > .tippy-arrow{
+    border-bottom-color: rgb(166, 20, 93);
+}
+
+*[data-tippy-content]::after{
+    content: "*";
+    color: rgba(255,255,255,0.6);
+    transition: color .2s;
+}
+
+*[data-tippy-content]:hover::after{
+    color: #db2580;
+}
+
+.tippy-content{
+    padding: 15px;
+}
+
+.tippy-explanation{
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 4px;
+    white-space: normal;
+}
+
+a{
+    color: #F94EA3;
+    transition: color .2s;
+}
+
+a:hover{
+    color: #f78dc2;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background-color: #282828;
+    z-index: 1000;
+    line-height: 48px;
+    overflow: hidden;
+}
+
+#not_supported{
+    position: fixed;
+    top: 45px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    z-index: 10000;
+    padding-top: 50px;
+    font-size: 22px;
+    display: none;
+}
+
+#not_supported.show-not-supported{
+    display: block;
+}
+
+#site_name{
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.pride-flag{
+    margin-top: 6px;
+    margin-left: 15px;
+    border-radius: 3px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.pride-flag.rainbow{
+    background: linear-gradient(180deg,
+        #FF0018 0%, #FF0018 16.7%,
+        #FFA52C 16.7%, #FFA52C 33.3%,
+        #FFFF41 33.3%, #FFFF41 50%,
+        #008018 50%, #008018 66.7%,
+        #0000F9 66.7%, #0000F9 83.3%,
+        #86007D 83.3%, #86007D 100%);
+}
+
+.pride-flag.trans{
+    background: linear-gradient(180deg,
+        #5bcffa 0%, #5bcffa 20%,
+        #f5abb9 20%, #f5abb9 40%,
+        white 40%, white 60%,
+        #f5abb9 60%, #f5abb9 80%,
+        #5bcffa 80%, #5bcffa 100%);
+}
+
+.pride-flag.lesbian{
+    background: linear-gradient(180deg,
+        #d62900 0%, #d62900 20%,
+        #ff9b55 20%, #ff9b55 40%,
+        white 40%, white 60%,
+        #d362a4 60%, #d362a4 80%,
+        #a30262 80%, #a30262 100%);
+}
+
+.pride-flag.bi{
+    background: linear-gradient(180deg,
+        #d70071 0%, #d70071 40%,
+        #9c4e97 40%, #9c4e97 60%,
+        #0035aa 60%, #0035aa 100%);
+}
+
+.pride-flag.pan{
+    background: linear-gradient(180deg,
+        #ff218c 0%, #ff218c 33.3%,
+        #ffd800 33.3%, #ffd800 66.6%,
+        #21b1ff 66.6%, #21b1ff 100%);
+}
+
+.pride-flag.nb{
+    background: linear-gradient(180deg,
+        #fcf431 0%, #fcf431 25%,
+        white 25%, white 50%,
+        #9d5cd5 50%, #9d5cd5 75%,
+        black 75%, black 100%);
+}
+
+.pride-flag.ace{
+    background: linear-gradient(180deg,
+        black 0%, black 25%,
+        #a3a3a3 25%, #a3a3a3 50%,
+        white 50%, white 75%,
+        #800080 75%, #800080 100%);
+}
+
+.pride-flag.genderfluid{
+    background: linear-gradient(180deg,
+        #ff76a4 0%, #ff76a4 20%,
+        white 20%, white 40%,
+        #bf11d7 40%, #bf11d7 60%,
+        black 60%, black 80%,
+        #303cbe 80%, #303cbe 100%);
+}
+
+
+.stat-name{
+    height: 30px;
+    line-height: 40px;
+    text-align: middle;
+    font-size: 110px;
+    position: 10%;
+    padding-left: 20%;
+    margin-bottom: 15px;
+    font-family: "Proxima Nova Condensed";
+    font-weight: 700;
+    font-style: italic;
+    color:#ffffff;
+    font-weight: 900;
+
+}
+
+    .stat-name2{
+        height: 30px;
+        line-height: 40px;
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 99%;
+        font-family: "Proxima Nova Condensed";
+        font-weight: 700;
+        font-weight: 900;
+        margin-left: 1.2%;
+        margin-right: 10%;
+    
+    }
+        
+    .stat-name3{
+        height: 30px;
+        line-height: 40px;
+        text-align: middle;
+        font-size: 40px;
+        margin-bottom: 15px;
+        font-family: "Bookman, serif";
+        font-weight: 700;
+        font-weight: 900;
+        margin-left: 1.2%;
+        margin-left: 42%;
+
+    }
+
+    .pride-flag2{
+        margin-top: 6px;
+        margin-left: 15px;
+        border-radius: 3px;
+        height: 400px;
+        width: 300px;
+        cursor: pointer;
+        user-select: none;
+        margin-left: 39%;
+        margin-top: 4%;
+        margin-right: 20%;
+    }
+
+        .stat-name4{
+            height: 30px;
+            line-height: 40px;
+            text-align: middle;
+            font-size: 40px;
+            margin-bottom: 15px;
+            font-family: "Bookman, serif";
+            font-weight: 700;
+            font-weight: 900;
+            margin-left: 1.2%;
+            margin-left: 40%;
+        }
+
+        .stat-name5{
+            height: 30px;
+            line-height: 40px;
+            text-align: middle;
+            font-size: 40px;
+            margin-bottom: 15px;
+            font-family: "Bookman, serif";
+            font-weight: 700;
+            font-weight: 900;
+            margin-left: 1.2%;
+            margin-left: 33%;
